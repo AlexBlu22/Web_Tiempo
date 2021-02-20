@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es" class="h-100">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS|JS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Personal CSS|JS -->
+    <link rel="stylesheet" type="text/css" href="css_per/index.css" />
+    <script src="js_per/index.js"></script>
+
+    <!-- Titulo de la pagina -->
+    <title>Tiempo</title>
+    <link rel="icon" type="image/png" href="imagen/brightness-alt-high.svg" />
+  </head>
+
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+      <!---------- Parte superior ---------->
+      <header class="mb-auto">
+
+        <!-- Enlaces -->
+        <div>
+          <nav class="nav nav-masthead justify-content-center">
+            <!-- Bootstrap -->
+            <a href="https://getbootstrap.com/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bootstrap nav-link text-secondary" viewBox="0 0 16 16">
+                <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
+                <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
+              </svg>
+            </a>
+            <!-- GitHub -->
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github nav-link text-secondary" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+            </a>
+          </nav>
+        </div>
+
+      </header>
+    
+      <!---------- Parte principal ---------->
+      <main class="px-3">
+
+        <!-- Titulo -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-brightness-alt-high text-secondary" viewBox="0 0 16 16">
+        <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4zm0 1a3 3 0 0 1 2.959 2.5H5.04A3 3 0 0 1 8 8z"/>
+        </svg>
+
+        <!-- Formulario -->
+        <form class="row g-3 ne">
+          <!-- Nombre -->
+          <div>
+            <label for="inputEmail" class="visually-hidden">Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Nombre" required autofocus>
+          </div>
+          <!-- Ciudad -->
+          <div class="col-md">
+            <label for="inputEmail" class="visually-hidden">City</label>
+            <input type="text" id="city" class="form-control" placeholder="Ciudad" required>
+          </div>
+          <!-- Pais -->
+          <div class="col-md">
+            <label for="inputEmail" class="visually-hidden">Country</label>
+            <input type="text" id="country" class="form-control" placeholder="País" required>
+          </div>
+          <!-- Boton -->
+          <div>
+            <button class="w-100 btn btn-secondary text-light" type="submit">Tiempo</button>
+          </div>
+        </form>
+
+      </main>
+    
+      <!---------- Parte inferior ---------->
+      <footer class="mt-auto text-white-50"></footer>
+
+        <!-- Copy -->
+        <p class="text-muted">&copy; AlexBlu22 (2021)</p>
+
+      </footer>
+
+    </div>
+  </body>
+</html>
