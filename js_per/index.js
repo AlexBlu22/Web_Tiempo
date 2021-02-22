@@ -10,7 +10,6 @@
 
 window.onload = function (){
   document.getElementById("boton").addEventListener("click", datos);
-  document.getElementById("boton_2").addEventListener("click", datos);
 };
 
 function datos (evento) {
@@ -30,21 +29,33 @@ function datos (evento) {
     })
     .then(function(datos) {
       console.log(datos);
-      // Temperatura dada por la API
+      // Datos dados por la API
       let temp = datos.main.temp;
       let temp_min = datos.main.temp_min;
       let temp_max = datos.main.temp_max;
       let icon = datos.weather['0'].icon;
       console.log(temp+", "+temp_min+", "+temp_max);
       console.log("Icono: "+icon);
-      /*
+      // Informacion mostrada en el Modal
       contenido.innerHTML =  `
-      <img src="${datos.weather['0'].icon}" width="100px" class="img-fluid">
+      <b>Hola ${nombre}, hoy en ${ciudad}/${pais} hace:<br></b>
+      <b><h3>${temp} ºC</h3></b>
+      Max: ${temp_max} ºC<br>
+      Min: ${temp_min} ºC<br>
+      <img src="http://openweathermap.org/img/wn/${icon}@2x.png" width="100px" class="img-fluid"><br>
+      <a href="https://openweathermap.org/" class="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-link-45deg text-secondary" viewBox="0 0 16 16">
+          <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+          <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
+        </svg>
+      </a>
       `
-      */
     })
     .catch((error) =>{
       console.error(error);
+      contenido.innerHTML =  `
+      Rellena el campo <b>Ciudad</b> o <b>País</b> como minimo
+      `
     });
 
   // Datos metidos

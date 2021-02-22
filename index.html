@@ -70,35 +70,31 @@
         </svg>
 
         <!-- Formulario -->
-        <form class="row g-3 ne">
+        <form class="row g-3">
           <!-- Nombre -->
           <div>
-            <label for="box_nombre" class="visually-hidden">Nombre</label>
-            <input type="text" name="text_nombre" id="text_nombre" class="form-control" placeholder="Nombre" required autofocus>
+            <label for="text_nombre" class="visually-hidden form-label">Nombre</label>
+            <input type="text" name="text_nombre" id="text_nombre" class="form-control" placeholder="Nombre" required="">
           </div>
           <!-- Ciudad -->
           <div class="col-md">
-            <label for="box_ciudad" class="visually-hidden">Ciudad</label>
-            <input type="text" name="text_ciudad" id="text_ciudad" class="form-control" placeholder="Ciudad" required>
+            <label for="text_ciudad" class="visually-hidden">Ciudad</label>
+            <input type="text" name="text_ciudad" id="text_ciudad" class="form-control" placeholder="Ciudad" required="">
           </div>
           <!-- Pais -->
           <div class="col-md">
-            <label for="box_pais" class="visually-hidden">País</label>
-            <input type="text" name="text_pais" id="text_pais" class="form-control" placeholder="País" required>
+            <label for="text_pais" class="visually-hidden">País</label>
+            <input type="text" name="text_pais" id="text_pais" class="form-control" placeholder="País" required="">
           </div>
           <!-- Boton -->
           <div>
-            <button id="boton" class="w-100 btn btn-secondary text-light" type="button">Tiempo</button>
-          </div>
-
-          <div>
           <!-- Button trigger modal -->
-          <button id="boton_2" type="button" class="w-100 btn btn-secondary text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button id="boton" type="button" class="w-100 btn btn-secondary text-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             Tiempo
           </button>
 
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
@@ -106,7 +102,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-dark" id="contenido">
-                  <!-- Informacion pedida -->
+                  <!-- Informacion pedida escrita en .js -->
                 </div>
               </div>
             </div>
