@@ -6,8 +6,5 @@ Cosas por hacer:
   Nombre, Ciudad, País, Boton (Dime el tiempo) [o]
 
 - Funcionamiento:
-  Que salga el tiempo en la pagina [x]
-
-- Error:
-  Que salte algo que diga que esta mal o falte y lo marque [x]
+  Que salga el tiempo en la pagina [o]
 ```
