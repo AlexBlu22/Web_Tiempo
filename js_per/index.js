@@ -54,13 +54,7 @@ function datos (evento) {
     .catch((error) =>{
       console.error(error);
       contenido.innerHTML =  `
-      Rellena el campo <b>Ciudad</b> o <b>País</b> como minimo
+      Ciudad no encontrada
       `
     });
-
-  // Datos metidos
-  /*
-  let msj1 = "Hola "+nombre+", hoy hace en "+ciudad+"/"+pais;
-  document.getElementById("msj1").innerHTML=msj1;
-  */
-};
+  }
